@@ -1,0 +1,7 @@
+#sos-btn {
+    text-align: center;
+    position: fixed;
+    bottom: 30px;
+    /* right: 0px;  */
+    left: 50%;
+}
