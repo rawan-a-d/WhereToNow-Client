@@ -4,6 +4,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { HomeComponent } from './home/home.component';
 import { TripsComponent } from './home/trips/trips.component';
 import { SearchTripComponent } from './home/search-trip/search-trip.component';
+import { OnboardingComponent } from './onboarding/onboarding.component';
 
 
 const appRoutes: Routes = [
@@ -25,6 +26,10 @@ const appRoutes: Routes = [
 				component: SearchTripComponent
 			}
 		]
+	},
+	{
+		path: 'onboarding',
+		component: OnboardingComponent
 	}
 
 // {

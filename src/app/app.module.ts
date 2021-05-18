@@ -23,6 +23,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
 import { RouterModule } from '@angular/router';
 import { SosConfirmationComponent } from './sos/sos-confirmation/sos-confirmation.component';
+import { OnboardingComponent } from './onboarding/onboarding.component';
 
 @NgModule({
   declarations: [
@@ -32,6 +33,7 @@ import { SosConfirmationComponent } from './sos/sos-confirmation/sos-confirmatio
     SearchTripComponent,
     TripsComponent,
     SosConfirmationComponent,
+    OnboardingComponent,
   ],
   imports: [
     BrowserModule,
