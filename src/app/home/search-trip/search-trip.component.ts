@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormControl, FormGroup } from '@angular/forms';
+import { ActivatedRoute, Router } from '@angular/router';
 import { TripService } from 'src/app/services/trip.service';
 
 @Component({
@@ -13,7 +14,8 @@ export class SearchTripComponent implements OnInit {
 		to: new FormControl(''),
 	});
 
-	constructor(private tripService: TripService) { }
+	constructor(private router: Router,
+              	private route: ActivatedRoute,) { }
 
 	ngOnInit(): void {
 
@@ -28,12 +30,10 @@ export class SearchTripComponent implements OnInit {
 	}
 
 	search() {
-		this.tripService.getTrips(this.from.value, this.to.value)
-			.subscribe(data => {
-				console.log(data)
-				
-				// render trips
-			})
+		// Navigate to trips page
+		this.router.navigate(['../trips'], {relativeTo: this.route, 
+											queryParams: {from: this.from.value, to: this.to.value}
+		});
 	}
 
 }

@@ -18,6 +18,8 @@ import { HomeComponent } from './home/home.component';
 import { SearchTripComponent } from './home/search-trip/search-trip.component';
 import { TripsComponent } from './home/trips/trips.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { AppRoutingModule } from './app-routing.module';
+import { RouterModule } from '@angular/router';
 
 @NgModule({
   declarations: [
@@ -37,6 +39,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     MatInputModule,
     BrowserAnimationsModule,
     SpeechModule,
+    AppRoutingModule,
   ],
   providers: [
     { provide: 'SPEECH_LANG', useValue: 'en-US' },
