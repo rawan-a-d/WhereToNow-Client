@@ -17,5 +17,4 @@ export class HomeComponent implements OnInit {
   lookForTrips() {
     this.router.navigate(['search'], {relativeTo: this.route});
   }
-
 }

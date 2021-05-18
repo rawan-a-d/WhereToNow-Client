@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
+import { Trip } from 'src/app/models/Trip';
 import { TripService } from 'src/app/services/trip.service';
 
 @Component({
@@ -8,7 +9,7 @@ import { TripService } from 'src/app/services/trip.service';
   styleUrls: ['./trips.component.css']
 })
 export class TripsComponent implements OnInit {
-  //trips: Trip[]
+  trips: Trip[]
 
   constructor(private route: ActivatedRoute,
               private tripService: TripService) { }
@@ -24,8 +25,8 @@ export class TripsComponent implements OnInit {
 				console.log(data)
 
 				// render trips
+        this.trips = <Trip[]> data;
 
 			})
   }
-
 }

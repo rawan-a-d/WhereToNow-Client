@@ -1,14 +1,35 @@
-/* Form */
+											/* Form */
 form {
-    margin-top: 4%;
+	width: 30%;
+	margin: 4% 35% 0 35%;
 }
 
 /* Input */
 mat-form-field {
-    width: 100%;
+	width: 100%;
 }
 
 /* Search button */
 #search-btn {
-    float: right;
+	float: right;
+}
+
+
+
+/* screens less than 1058px and more than 800px */
+@media screen and (min-width: 600px) and (max-width: 800px) {
+												/* Form */
+	form {
+		width: 60%;
+		margin: 4% 20% 0 20%;
+	}
+}
+
+/* screens less than 800px */
+@media screen and (max-width: 600px) {
+												/* Form */
+	form {
+		width: 90%;
+		margin: 4% 5% 0 5%;
+	}
 }
