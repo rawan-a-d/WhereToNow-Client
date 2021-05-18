@@ -1,0 +1,52 @@
+  .card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 700px;
+    margin: auto;
+    font-family: arial;
+  }
+  
+  .name{
+      text-align: center;
+  }
+
+  table {
+      border: none;
+      margin-left: 250px;
+  }
+
+  img {
+    border-radius: 70%;
+  }
+
+  .center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+  }
+
+  .carIcon{
+    width: 100px;
+    border-radius: 50%;
+    border: 3px solid orange;
+  }
+
+  .angelIcon{
+    width: 100px;
+    border-radius: 50%;
+    border: 3px solid orange;
+    margin-left: 2%;
+  }
+  
+  .angelIcon:hover {
+    /* background: #ff9800; */
+    cursor: pointer;
+    color: white;
+  }
+
+  .carIcon:hover {
+    /* background: #ff9800; */
+    cursor: pointer;
+    color: white;
+  }
+  

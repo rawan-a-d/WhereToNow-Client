@@ -24,6 +24,13 @@ import { AppRoutingModule } from './app-routing.module';
 import { RouterModule } from '@angular/router';
 import { SosConfirmationComponent } from './sos/sos-confirmation/sos-confirmation.component';
 import { OnboardingComponent } from './onboarding/onboarding.component';
+import { GuardianPageComponent } from './guardian-page/guardian-page.component';
+
+import { ProfilePageComponent } from './profile-page/profile-page.component';
+
+import { ServiceWorkerModule } from '@angular/service-worker';
+import { environment } from '../environments/environment';
+
 
 @NgModule({
   declarations: [
@@ -34,6 +41,8 @@ import { OnboardingComponent } from './onboarding/onboarding.component';
     TripsComponent,
     SosConfirmationComponent,
     OnboardingComponent,
+    ProfilePageComponent,
+    GuardianPageComponent,
   ],
   imports: [
     BrowserModule,
@@ -48,6 +57,12 @@ import { OnboardingComponent } from './onboarding/onboarding.component';
     MatFormFieldModule,
     MatInputModule,
     MatDialogModule,
+    ServiceWorkerModule.register('ngsw-worker.js', {
+      enabled: environment.production,
+      // Register the ServiceWorker as soon as the app is stable
+      // or after 30 seconds (whichever comes first).
+      registrationStrategy: 'registerWhenStable:30000'
+    }),
   ],
   providers: [
     { provide: 'SPEECH_LANG', useValue: 'en-US' },

@@ -1,0 +1,21 @@
+
+<div class="card">
+    <div class="title">
+        <h1>My Guardians</h1>
+    </div>
+    
+    <tr id="test"  *ngFor="let guardian of guardians">
+    
+        <div class="table">
+            <table cellspacing="0" cellpadding="0">
+                <tr> 
+                    <td><img class="image" src="{{guardian.guardian_id.image}}" /></td>
+                    <td><h4>{{guardian.guardian_id.name}}</h4></td>
+                </tr>
+            </table>
+        </div>
+    
+    </tr>
+
+    <button class="btn add">Add</button>
+</div>

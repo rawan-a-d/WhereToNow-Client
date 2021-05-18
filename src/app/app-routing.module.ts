@@ -5,6 +5,8 @@ import { HomeComponent } from './home/home.component';
 import { TripsComponent } from './home/trips/trips.component';
 import { SearchTripComponent } from './home/search-trip/search-trip.component';
 import { OnboardingComponent } from './onboarding/onboarding.component';
+import { ProfilePageComponent } from './profile-page/profile-page.component';
+import { GuardianPageComponent } from './guardian-page/guardian-page.component';
 
 
 const appRoutes: Routes = [
@@ -30,7 +32,15 @@ const appRoutes: Routes = [
 	{
 		path: 'onboarding',
 		component: OnboardingComponent
-	}
+	},
+	{ 
+		path: 'wheretonow/profile',
+		component: ProfilePageComponent,
+	  },
+	  { 
+		path: 'wheretonow/guardians',
+		component: GuardianPageComponent,
+	  },
 
 // {
 //   path: '**',
