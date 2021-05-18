@@ -38,6 +38,8 @@ export class SosComponent implements OnInit {
 		})
 	}
 
+
+	// SOS
 	sos() {
 		console.log(this.voiceRecognitionService.text)
 		if(this.voiceRecognitionService.text == this.safeWord) {
@@ -51,6 +53,8 @@ export class SosComponent implements OnInit {
 		this.openDialog();
 	}
 
+
+	// Voice recognition
 	startService(){
 		this.voiceRecognitionService.start()
 	}
@@ -59,6 +63,8 @@ export class SosComponent implements OnInit {
 		this.voiceRecognitionService.stop()
 	}
 
+
+	// Confirmation dialog
 	openDialog() {
 		this.dialog.open(SosConfirmationComponent, {
 			height: '20%',
