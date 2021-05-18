@@ -15,4 +15,8 @@ export class UserService {
   public getUser(){ //get all users
     return this.httpClient.get("http://localhost:9090/WhereToNow/users/");
   }
+
+  public getUserGuardians(id){ //get user's guardians
+    return this.httpClient.get("http://localhost:9090/WhereToNow/users/" + id + "/guardians/");
+  }
 }

@@ -19,20 +19,6 @@ export class GuardianPageComponent implements OnInit {
   ngOnInit(): void {
 
     console.log("User ID Guardian Page: " + this.loggedInUser);
-    
-    // this.userService.getUserGuardians(this.loggedInUser).subscribe((data)=>{
-    //   console.log("User: " + data);
-    //   this.guardians = <GuardianDTO[]>data;
-    //   console.log("Guardians: " + this.guardians);
-    //  }); 
-
-    // this.userService.getUserGuardians(this.loggedInUser)
-    // .subscribe(
-    //   data => {
-    //     this.guardians = <Guardian[]>data;
-    //     console.log("Guardians: " + this.guardians);
-    //   }
-    // )
 
     this.userService.getUserGuardians(this.loggedInUser)
     .subscribe(
