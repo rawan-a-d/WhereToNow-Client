@@ -1,7 +1,7 @@
 img {
     width: 80px;
     border-radius: 50%;
-    margin-left: 10px;
+    margin-left: 20px;
 }
 
 .title{
@@ -10,14 +10,18 @@ img {
 
 .card {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    max-width: 300px;
+    max-width: 700px;
     margin: auto;
     font-family: arial;
 }
 
+.table{
+    margin-top: 50px;
+}
+
 .btn {
     margin-top: 30%;
-    margin-left: 10px;
+    margin-left: 25px;
     margin-bottom:70px;
     border: 2px solid black;
     background-color: white;
