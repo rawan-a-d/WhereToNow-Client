@@ -8,6 +8,8 @@ import { SosComponent } from './sos/sos.component';
 import {MatButtonModule} from '@angular/material/button';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatInputModule} from '@angular/material/input';
+import {MatDialogModule} from '@angular/material/dialog';
+
 
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { SpeechModule } from 'ngx-speech';
@@ -20,6 +22,7 @@ import { TripsComponent } from './home/trips/trips.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
 import { RouterModule } from '@angular/router';
+import { SosConfirmationComponent } from './sos/sos-confirmation/sos-confirmation.component';
 
 @NgModule({
   declarations: [
@@ -28,18 +31,21 @@ import { RouterModule } from '@angular/router';
     HomeComponent,
     SearchTripComponent,
     TripsComponent,
+    SosConfirmationComponent,
   ],
   imports: [
     BrowserModule,
     HttpClientModule,
     FormsModule,
     ReactiveFormsModule,
-    MatButtonModule,
-    MatFormFieldModule,
-    MatInputModule,
     BrowserAnimationsModule,
     SpeechModule,
     AppRoutingModule,
+
+    MatButtonModule,
+    MatFormFieldModule,
+    MatInputModule,
+    MatDialogModule,
   ],
   providers: [
     { provide: 'SPEECH_LANG', useValue: 'en-US' },

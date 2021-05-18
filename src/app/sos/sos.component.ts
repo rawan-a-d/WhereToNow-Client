@@ -1,7 +1,9 @@
 import { Component, OnInit } from '@angular/core';
+import { MatDialog, MatDialogRef } from '@angular/material/dialog';
 import { SpeechService } from 'ngx-speech';
 import { Subscription } from 'rxjs';
 import { VoiceRecognitionService } from '../services/voice-recognition.service';
+import { SosConfirmationComponent } from './sos-confirmation/sos-confirmation.component';
 
 @Component({
   selector: 'app-sos',
@@ -18,7 +20,8 @@ export class SosComponent implements OnInit {
 
 
   	constructor(public speech: SpeechService, 
-              	public voiceRecognitionService : VoiceRecognitionService)
+              	public voiceRecognitionService : VoiceRecognitionService,
+				public dialog: MatDialog)
  	{
       	this.voiceRecognitionService.init()
   	}
@@ -31,7 +34,7 @@ export class SosComponent implements OnInit {
 		.subscribe(value => {
 			console.log('Info got changed to: ' + value);
 
-			this.sos()
+			this.sos();
 		})
 	}
 
@@ -39,11 +42,13 @@ export class SosComponent implements OnInit {
 		console.log(this.voiceRecognitionService.text)
 		if(this.voiceRecognitionService.text == this.safeWord) {
 			console.log("SOS")
+			this.openDialog();
 		}
 	}
 
 	pressSos() {
-		console.log("SOS button was pressed")
+		console.log("SOS button was pressed");
+		this.openDialog();
 	}
 
 	startService(){
@@ -52,5 +57,12 @@ export class SosComponent implements OnInit {
 
 	stopService(){
 		this.voiceRecognitionService.stop()
+	}
+
+	openDialog() {
+		this.dialog.open(SosConfirmationComponent, {
+			height: '20%',
+			width: 'auto',
+		});
 	}
 }
