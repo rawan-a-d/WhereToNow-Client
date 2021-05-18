@@ -12,7 +12,8 @@ export class TripService extends DataService {
     super('http://localhost:9090/WhereToNow/trips', http)
   }
 
-  getTrips(from: string, to: string) {
+  getTrips(from, to) {
+    console.log('http://localhost:9090/WhereToNow/trips?from=' + from + '&to=' + to)
     return this.http.get('http://localhost:9090/WhereToNow/trips?from=' + from + '&to=' + to)
       .pipe(
         map(

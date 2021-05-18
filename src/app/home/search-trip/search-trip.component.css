@@ -1,0 +1,14 @@
+/* Form */
+form {
+    margin-top: 4%;
+}
+
+/* Input */
+mat-form-field {
+    width: 100%;
+}
+
+/* Search button */
+#search-btn {
+    float: right;
+}
