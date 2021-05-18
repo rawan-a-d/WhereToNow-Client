@@ -24,5 +24,30 @@
     margin-right: auto;
     width: 50%;
   }
+
+  .carIcon{
+    width: 100px;
+    border-radius: 50%;
+    border: 3px solid orange;
+    margin-left: 30%;
+  }
+
+  .angelIcon{
+    width: 100px;
+    border-radius: 50%;
+    border: 3px solid orange;
+    margin-left: 30%;
+  }
   
+  .angelIcon:hover {
+    /* background: #ff9800; */
+    cursor: pointer;
+    color: white;
+  }
+
+  .carIcon:hover {
+    /* background: #ff9800; */
+    cursor: pointer;
+    color: white;
+  }
   
