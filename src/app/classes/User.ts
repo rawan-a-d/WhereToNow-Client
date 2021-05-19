@@ -7,6 +7,7 @@ export class User{
         public password: String,
         public image: String,
         public number: number,
+        public safe_word: String,
     )
     {}
     
