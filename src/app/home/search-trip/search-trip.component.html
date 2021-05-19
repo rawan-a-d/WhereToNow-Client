@@ -1,0 +1,17 @@
+<!-- Form -->
+<form [formGroup]="tripSearchForm" (ngSubmit)="search()">
+	<!-- From -->
+	<mat-form-field appearance="outline" class="example-full-width">
+		<mat-label>From</mat-label>
+		<input matInput name="from" ngModel placeholder="Where are you traveling from?"  formControlName="from">
+	</mat-form-field>
+
+	<!-- To -->
+	<mat-form-field appearance="outline" class="example-full-width">
+		<mat-label>To</mat-label>
+		<input matInput name="to" ngModel placeholder="What is your destination?" formControlName="to">
+	</mat-form-field>
+
+	<!-- Button -->
+	<button mat-stroked-button color="primary" id="search-btn" (click)="search()">Search</button>
+</form>

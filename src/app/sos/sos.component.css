@@ -1,0 +1,15 @@
+#container {
+    position: relative;
+}
+
+#button-container {
+    position: fixed;
+    bottom: 10px;
+    right: 0;
+    left: 0;
+    text-align: center;
+}
+
+#sos-btn {
+    margin: auto;
+}

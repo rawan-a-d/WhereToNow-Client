@@ -1,0 +1,18 @@
+<!-- Grid container -->
+<div id="grid-container">
+    <!-- Grid item -->
+    <div class="grid-item" *ngFor="let trip of trips">
+        <!-- Image container -->
+        <div class="image-container">
+            <img [src]="trip.user.image" alt="">
+        </div>
+
+        <!-- Text container -->
+        <div class="text">
+            <h2>{{trip.user.name}}</h2>
+            <p>SP {{trip.price}} 
+                <span>p/p</span>
+            </p>
+        </div>
+    </div>
+</div>

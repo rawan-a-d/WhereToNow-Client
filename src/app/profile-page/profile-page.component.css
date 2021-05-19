@@ -1,59 +1,59 @@
 .name{
-      text-align: center; 
-  }
-
-  table {
-      border: none;
-      margin-left: 10%;
-  }
-
-  .icons{
-    margin-top: 5%;
-    border: none;
-    margin-left: 22%;
-  }
-
-  img {
-    border-radius: 70%;
-  }
-
-  .center {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    /* width: 50%; */
-  }
-
-  .carIcon{
-    width: 100px;
-    border-radius: 50%;
-    border: 3px solid orange;
-  }
-
-  .angelIcon{
-    width: 100px;
-    border-radius: 50%;
-    border: 3px solid orange;
-    margin-left: 5%;
-  }
-  
-  .angelIcon:hover {
-    /* background: #ff9800; */
-    cursor: pointer;
-    color: white;
-  }
-
-  .carIcon:hover {
-    /* background: #ff9800; */
-    cursor: pointer;
-    color: white;
-  }
-
-  /* screens less than 550px */
-@media screen and (max-width: 550px) {
-    #looking-for-trip {
-    width: 90%;
-    margin: 4% 5%; 
-  }	
+  text-align: center; 
 }
-  
+
+table {
+  border: none;
+  margin-left: 10%;
+}
+
+.icons{
+margin-top: 5%;
+border: none;
+margin-left: 22%;
+}
+
+img {
+border-radius: 70%;
+}
+
+.center {
+display: block;
+margin-left: auto;
+margin-right: auto;
+/* width: 50%; */
+}
+
+.carIcon{
+width: 100px;
+border-radius: 50%;
+border: 3px solid orange;
+}
+
+.angelIcon{
+width: 100px;
+border-radius: 50%;
+border: 3px solid orange;
+margin-left: 5%;
+}
+
+.angelIcon:hover {
+/* background: #ff9800; */
+cursor: pointer;
+color: white;
+}
+
+.carIcon:hover {
+/* background: #ff9800; */
+cursor: pointer;
+color: white;
+}
+
+/* screens less than 550px */
+@media screen and (max-width: 550px) {
+#looking-for-trip {
+width: 90%;
+margin: 4% 5%; 
+}	
+}
+
