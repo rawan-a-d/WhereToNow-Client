@@ -11,6 +11,7 @@ export class ProfilePageComponent implements OnInit {
 
   user: User;
   loggedInUser: number = 1;
+  hide : boolean = true;
 
   showPassword = false;
   input: any;
@@ -31,6 +32,10 @@ export class ProfilePageComponent implements OnInit {
   toggleShow() {
     this.showPassword = !this.showPassword;
     this.input.type = this.showPassword ? 'text' : 'password';
+  }
+
+  myFunction() {
+    this.hide = !this.hide;
   }
 
 }

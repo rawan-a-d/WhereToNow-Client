@@ -1,5 +1,4 @@
-
-<!-- <div class="card"> -->
+<!-- 
     <div class="title">
         <h1>My Guardians</h1>
     </div>
@@ -12,12 +11,36 @@
                     <td><img class="image" src="{{guardian.guardian_id.image}}" /></td>
                     <td><h4>{{guardian.guardian_id.name}}</h4></td>
                 </tr>
-            </table>
+            </table> 
         </div>
     
     </tr>
 
     <div class="btn">
         <button class="add">Add</button>
+    </div> -->
+
+<!-- Grid container -->
+
+<div class="title">
+    <p>My Guardians</p>
+</div>
+<div id="grid-container">
+    <!-- Grid item -->
+    <div class="grid-item" *ngFor="let guardian of guardians">
+        
+        <!-- Image container -->
+        <div class="image-container">
+            <img [src]="guardian.guardian_id.image" alt=""> 
+        </div>
+
+        <!-- Text container -->
+        <div class="text">
+            <h2>{{guardian.guardian_id.name}}</h2>
+        </div>
     </div>
-<!-- </div> -->
+</div> 
+
+<div class="btn">
+    <button class="add">Add</button>
+</div>

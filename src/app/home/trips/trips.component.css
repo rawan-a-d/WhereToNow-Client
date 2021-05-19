@@ -7,14 +7,14 @@
 	column-gap: 10px;
 	row-gap: 15px;
 	justify-items: center;
-	justify-content: space-between;
+	justify-content: space-between; 
 }
 
 
 													/*	Grid item */
 .grid-item {
 	text-align: center;
-	width: 85%;
+	width: 85%; 
 }
 
 /* Details */

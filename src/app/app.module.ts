@@ -9,6 +9,7 @@ import {MatButtonModule} from '@angular/material/button';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatInputModule} from '@angular/material/input';
 import {MatDialogModule} from '@angular/material/dialog';
+import {MatIconModule} from '@angular/material/icon';
 
 
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -57,6 +58,7 @@ import { environment } from '../environments/environment';
     MatFormFieldModule,
     MatInputModule,
     MatDialogModule,
+    MatIconModule,
     ServiceWorkerModule.register('ngsw-worker.js', {
       enabled: environment.production,
       // Register the ServiceWorker as soon as the app is stable
