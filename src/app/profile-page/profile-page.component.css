@@ -17,7 +17,12 @@ table {
   align-self: center;
 } */
 .data{
-  margin-left: 2.5em;
+  margin-left: 4em;
+  margin-bottom: 10%;
+}
+
+.label{
+  font-weight: bold;
 }
 
 img {

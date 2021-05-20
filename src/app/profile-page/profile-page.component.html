@@ -12,16 +12,18 @@
         
         <table cellspacing="0" cellpadding="0">
         <tr>
-            <td><h2>Phone number:</h2></td> 
+            <td><p class="label">Phone number:</p></td> 
             <td><p class="data">{{user.number}}</p></td>
         </tr>
     
         <tr>
-            <td><h2>Safe word:</h2></td>
+            <td><p class="label">Safe word:</p></td>
             <!-- <td><p class="data">{{user.safe_word}}</p></td> -->
-            <input class="data" value="{{user.safe_word}}" [type]="hide ? 'password' : 'text'" style="border: none;">
-            <mat-icon class="placeholder" (click)="myFunction()" style="margin-left: -50px;
-            cursor: pointer;">{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+            <td>
+                <input class="data" value="{{user.safe_word}}" [type]="hide ? 'password' : 'text'" style="border: none;">
+                <mat-icon class="placeholder" (click)="myFunction()" style="margin-left: -70px;
+                cursor: pointer;">{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+            </td>
         </tr>
         </table>
     
