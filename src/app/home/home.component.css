@@ -2,14 +2,13 @@
 #looking-for-trip {
     width: 30%;
     margin: 4% 35% 0 35%;
-    /* margin: 4% 0;
-    width: 100%; */
 }
 
 
 /* screens less than 550px */
 @media screen and (max-width: 550px) {
     #looking-for-trip {
+        margin-top: 10%;
 		width: 90%;
         margin: 4% 5%;
 	}	

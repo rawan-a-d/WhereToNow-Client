@@ -9,6 +9,7 @@ import {MatButtonModule} from '@angular/material/button';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatInputModule} from '@angular/material/input';
 import {MatDialogModule} from '@angular/material/dialog';
+import { MDBBootstrapModule } from 'angular-bootstrap-md';
 
 
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -24,6 +25,10 @@ import { AppRoutingModule } from './app-routing.module';
 import { RouterModule } from '@angular/router';
 import { SosConfirmationComponent } from './sos/sos-confirmation/sos-confirmation.component';
 import { OnboardingComponent } from './onboarding/onboarding.component';
+import { NavbarComponent } from './navbar/navbar.component';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+
+
 
 @NgModule({
   declarations: [
@@ -34,6 +39,7 @@ import { OnboardingComponent } from './onboarding/onboarding.component';
     TripsComponent,
     SosConfirmationComponent,
     OnboardingComponent,
+    NavbarComponent,
   ],
   imports: [
     BrowserModule,
@@ -48,6 +54,10 @@ import { OnboardingComponent } from './onboarding/onboarding.component';
     MatFormFieldModule,
     MatInputModule,
     MatDialogModule,
+
+    MDBBootstrapModule.forRoot(),
+      FontAwesomeModule,
+      
   ],
   providers: [
     { provide: 'SPEECH_LANG', useValue: 'en-US' },
