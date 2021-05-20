@@ -1,4 +1,4 @@
-import { User } from "./User";
+import { User } from "./DTO/User";
 
 // trip = new Trip(tripId, location, destination, dateTime, price, numberPeople, user);
 export class Trip { 

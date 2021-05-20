@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { MatDialog, MatDialogRef } from '@angular/material/dialog';
 import { SpeechService } from 'ngx-speech';
 import { Subscription } from 'rxjs';
-import { VoiceRecognitionService } from '../services/voice-recognition.service';
+import { VoiceRecognitionService } from '../services/voice-recognition/voice-recognition.service';
 import { SosConfirmationComponent } from './sos-confirmation/sos-confirmation.component';
 
 @Component({

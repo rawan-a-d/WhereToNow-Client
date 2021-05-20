@@ -1,15 +1,15 @@
-import { UserDTO } from './../classes/DTO/UserDTO';
+import { UserDTO } from '../classes/DTO/UserDTO';
 import { Component, OnInit } from '@angular/core';
 import { User } from '../classes/User';
-import { UserService } from '../services/User/user.service';
+import { UserService } from '../services/user/user.service';
 import { Guardian } from '../classes/Guardian';
 
 @Component({
-  selector: 'app-guardian-page',
-  templateUrl: './guardian-page.component.html',
-  styleUrls: ['./guardian-page.component.css']
+  selector: 'app-guardian',
+  templateUrl: './guardian.component.html',
+  styleUrls: ['./guardian.component.css']
 })
-export class GuardianPageComponent implements OnInit {
+export class GuardianComponent implements OnInit {
 
   guardians: Guardian[];
   loggedInUser: number = 1; 
@@ -18,13 +18,10 @@ export class GuardianPageComponent implements OnInit {
 
   ngOnInit(): void {
 
-    console.log("User ID Guardian Page: " + this.loggedInUser);
-
     this.userService.getUserGuardians(this.loggedInUser)
     .subscribe(
       data => {
         this.guardians = <Guardian[]>data;
-        console.log("Guardians: " + this.guardians);
       }
     )
 

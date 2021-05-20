@@ -1,3 +1,4 @@
+import { ProfileComponent } from './profile/profile.component';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { HttpClientModule } from '@angular/common/http';
@@ -15,9 +16,9 @@ import {MatIconModule} from '@angular/material/icon';
 
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { SpeechModule } from 'ngx-speech';
-import { DataService } from './services/data.service';
-import { TripService } from './services/trip.service';
-import { VoiceRecognitionService } from './services/voice-recognition.service';
+import { DataService } from './services/data/data.service';
+import { TripService } from './services/trip/trip.service';
+import { VoiceRecognitionService } from './services/voice-recognition/voice-recognition.service';
 import { HomeComponent } from './home/home.component';
 import { SearchTripComponent } from './home/search-trip/search-trip.component';
 import { TripsComponent } from './home/trips/trips.component';
@@ -26,13 +27,12 @@ import { AppRoutingModule } from './app-routing.module';
 import { RouterModule } from '@angular/router';
 import { SosConfirmationComponent } from './sos/sos-confirmation/sos-confirmation.component';
 import { OnboardingComponent } from './onboarding/onboarding.component';
-import { GuardianPageComponent } from './guardian-page/guardian-page.component';
-import { ProfilePageComponent } from './profile-page/profile-page.component';
 
 // import { ServiceWorkerModule } from '@angular/service-worker';
 import { environment } from '../environments/environment';
 import { NavbarComponent } from './navbar/navbar.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { GuardianComponent } from './guardian/guardian.component';
 
 
 
@@ -46,8 +46,8 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
     SosConfirmationComponent,
     OnboardingComponent,
     NavbarComponent,
-    ProfilePageComponent,
-    GuardianPageComponent
+    ProfileComponent,
+    GuardianComponent
   ],
   imports: [
     BrowserModule,

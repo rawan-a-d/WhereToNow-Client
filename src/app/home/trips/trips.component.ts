@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
-import { Trip } from 'src/app/models/Trip';
-import { TripService } from 'src/app/services/trip.service';
+import { Trip } from 'src/app/classes/Trip';
+import { TripService } from 'src/app/services/trip/trip.service';
 
 @Component({
   selector: 'app-trips',

@@ -1,7 +1,7 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { map } from 'rxjs/operators';
-import { DataService } from './data.service';
+import { DataService } from '../data/data.service';
 
 @Injectable({
   providedIn: 'root'
