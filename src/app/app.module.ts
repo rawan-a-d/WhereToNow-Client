@@ -10,6 +10,7 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { MatDialogModule } from '@angular/material/dialog';
 import { MDBBootstrapModule } from 'angular-bootstrap-md';
+import {MatIconModule} from '@angular/material/icon';
 
 
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -62,6 +63,7 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
     MatFormFieldModule,
     MatInputModule,
     MatDialogModule,
+    MatIconModule,
     // ServiceWorkerModule.register('ngsw-worker.js', {
     //   enabled: environment.production,
     //   // Register the ServiceWorker as soon as the app is stable
@@ -70,7 +72,7 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
     // }),
 
     MDBBootstrapModule.forRoot(),
-      FontAwesomeModule,
+    FontAwesomeModule,
       
   ],
   providers: [
