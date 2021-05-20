@@ -25,6 +25,10 @@
             ],
             "styles": [
               "./node_modules/@angular/material/prebuilt-themes/indigo-pink.css",
+              "./node_modules/mdb-ui-kit/css/mdb.min.css",
+              // ng add @fortawesome/angular-fontawesome
+              "./node_modules/angular-bootstrap-md/assets/scss/bootstrap/bootstrap.scss",
+              "./node_modules/angular-bootstrap-md/assets/scss/mdb.scss",
               "src/styles.css",
               "src/theme.scss"
             ],

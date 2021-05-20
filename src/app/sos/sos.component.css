@@ -4,7 +4,7 @@
 
 #button-container {
     position: fixed;
-    bottom: 10px;
+    bottom: 20px;
     right: 0;
     left: 0;
     text-align: center;
@@ -12,4 +12,16 @@
 
 #sos-btn {
     margin: auto;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+
+
+/* screens less than 550px */
+@media screen and (min-width: 550px) {
+    #sos-btn {
+        width: 60px;
+        height: 60px;
+        font-size: 1.5em;
+    }
 }

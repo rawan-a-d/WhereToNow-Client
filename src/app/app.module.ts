@@ -1,14 +1,15 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
+import { HttpClientModule } from '@angular/common/http';
 
 import { AppComponent } from './app.component';
 import { SosComponent } from './sos/sos.component';
 
-import {MatButtonModule} from '@angular/material/button';
-import {MatFormFieldModule} from '@angular/material/form-field';
-import {MatInputModule} from '@angular/material/input';
-import {MatDialogModule} from '@angular/material/dialog';
+import { MatButtonModule } from '@angular/material/button';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatInputModule } from '@angular/material/input';
+import { MatDialogModule } from '@angular/material/dialog';
+import { MDBBootstrapModule } from 'angular-bootstrap-md';
 
 
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -25,11 +26,13 @@ import { RouterModule } from '@angular/router';
 import { SosConfirmationComponent } from './sos/sos-confirmation/sos-confirmation.component';
 import { OnboardingComponent } from './onboarding/onboarding.component';
 import { GuardianPageComponent } from './guardian-page/guardian-page.component';
-
 import { ProfilePageComponent } from './profile-page/profile-page.component';
 
-import { ServiceWorkerModule } from '@angular/service-worker';
+// import { ServiceWorkerModule } from '@angular/service-worker';
 import { environment } from '../environments/environment';
+import { NavbarComponent } from './navbar/navbar.component';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+
 
 
 @NgModule({
@@ -41,8 +44,9 @@ import { environment } from '../environments/environment';
     TripsComponent,
     SosConfirmationComponent,
     OnboardingComponent,
+    NavbarComponent,
     ProfilePageComponent,
-    GuardianPageComponent,
+    GuardianPageComponent
   ],
   imports: [
     BrowserModule,
@@ -52,22 +56,27 @@ import { environment } from '../environments/environment';
     BrowserAnimationsModule,
     SpeechModule,
     AppRoutingModule,
+    RouterModule,
 
     MatButtonModule,
     MatFormFieldModule,
     MatInputModule,
     MatDialogModule,
-    ServiceWorkerModule.register('ngsw-worker.js', {
-      enabled: environment.production,
-      // Register the ServiceWorker as soon as the app is stable
-      // or after 30 seconds (whichever comes first).
-      registrationStrategy: 'registerWhenStable:30000'
-    }),
+    // ServiceWorkerModule.register('ngsw-worker.js', {
+    //   enabled: environment.production,
+    //   // Register the ServiceWorker as soon as the app is stable
+    //   // or after 30 seconds (whichever comes first).
+    //   registrationStrategy: 'registerWhenStable:30000'
+    // }),
+
+    MDBBootstrapModule.forRoot(),
+      FontAwesomeModule,
+      
   ],
   providers: [
-    { provide: 'SPEECH_LANG', useValue: 'en-US' },
     DataService,
     TripService,
+    { provide: 'SPEECH_LANG', useValue: 'en-US' },
     VoiceRecognitionService
   ],
   bootstrap: [AppComponent]

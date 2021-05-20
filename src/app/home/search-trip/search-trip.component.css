@@ -1,7 +1,7 @@
 											/* Form */
 form {
-	width: 30%;
-	margin: 4% 35% 0 35%;
+	width: 40%;
+	margin: 4% 30% 0 30%;
 }
 
 /* Input */
@@ -15,9 +15,8 @@ mat-form-field {
 }
 
 
-
-/* screens less than 1058px and more than 800px */
-@media screen and (min-width: 600px) and (max-width: 800px) {
+/* screens between 600px and 900px */
+@media screen and (min-width: 600px) and (max-width: 900px) {
 												/* Form */
 	form {
 		width: 60%;
@@ -25,7 +24,7 @@ mat-form-field {
 	}
 }
 
-/* screens less than 800px */
+/* screens less than 600px */
 @media screen and (max-width: 600px) {
 												/* Form */
 	form {
