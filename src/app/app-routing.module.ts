@@ -10,11 +10,6 @@ import { ProfileComponent } from './profile/profile.component';
 
 
 const appRoutes: Routes = [
-	// {
-	// 	path: '',
-	// 	redirectTo: '/recipes',
-	// 	pathMatch: 'full'
-	// },
 	{
 		path: '',
 		component: HomeComponent,
@@ -34,11 +29,11 @@ const appRoutes: Routes = [
 		component: OnboardingComponent
 	},
 	{ 
-		path: 'wheretonow/profile',
+		path: 'profile',
 		component: ProfileComponent,
 	  },
 	  { 
-		path: 'wheretonow/guardians',
+		path: 'guardians',
 		component: GuardianComponent,
 	  },
 

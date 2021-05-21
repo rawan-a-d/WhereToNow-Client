@@ -4,12 +4,12 @@
     <div class="grid-item" *ngFor="let trip of trips">
         <!-- Image container -->
         <div class="image-container">
-            <img [src]="trip.user.image" alt="">
+            <img [src]="trip.userDTO.image" alt="">
         </div>
 
         <!-- Text container -->
         <div class="text">
-            <h2>{{trip.user.name}}</h2>
+            <h2>{{trip.userDTO.name}}</h2>
             <p>SP {{trip.price}} 
                 <span>p/p</span>
             </p>
