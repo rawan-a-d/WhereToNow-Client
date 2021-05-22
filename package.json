@@ -31,6 +31,7 @@
     "instantsearch.js": "^3.7.0",
     "material-icons": "^0.6.3",
     "mdb-ui-kit": "^3.6.0",
+    "ngx-gallery": "^5.10.0",
     "ngx-speech": "0.0.8",
     "rxjs": "~6.6.0",
     "tslib": "^2.0.0",

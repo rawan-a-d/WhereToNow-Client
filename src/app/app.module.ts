@@ -26,14 +26,13 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
 import { RouterModule } from '@angular/router';
 import { SosConfirmationComponent } from './sos/sos-confirmation/sos-confirmation.component';
-import { OnboardingComponent } from './onboarding/onboarding.component';
 
 // import { ServiceWorkerModule } from '@angular/service-worker';
 import { environment } from '../environments/environment';
 import { NavbarComponent } from './navbar/navbar.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { GuardianComponent } from './guardian/guardian.component';
-
+import { NotFoundComponent } from './not-found/not-found.component';
 
 
 @NgModule({
@@ -44,10 +43,10 @@ import { GuardianComponent } from './guardian/guardian.component';
     SearchTripComponent,
     TripsComponent,
     SosConfirmationComponent,
-    OnboardingComponent,
     NavbarComponent,
     ProfileComponent,
-    GuardianComponent
+    GuardianComponent,
+    NotFoundComponent
   ],
   imports: [
     BrowserModule,
@@ -72,8 +71,7 @@ import { GuardianComponent } from './guardian/guardian.component';
     // }),
 
     MDBBootstrapModule.forRoot(),
-    FontAwesomeModule,
-      
+    FontAwesomeModule
   ],
   providers: [
     DataService,
