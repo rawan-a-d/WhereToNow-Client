@@ -1,12 +1,11 @@
 import { GuardianComponent } from './guardian/guardian.component';
 import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
 import { RouterModule, Routes } from '@angular/router';
 import { HomeComponent } from './home/home.component';
 import { TripsComponent } from './home/trips/trips.component';
 import { SearchTripComponent } from './home/search-trip/search-trip.component';
-import { OnboardingComponent } from './onboarding/onboarding.component';
 import { ProfileComponent } from './profile/profile.component';
+import { NotFoundComponent } from './not-found/not-found.component';
 
 
 const appRoutes: Routes = [
@@ -24,23 +23,18 @@ const appRoutes: Routes = [
 			}
 		]
 	},
-	{
-		path: 'onboarding',
-		component: OnboardingComponent
-	},
 	{ 
 		path: 'profile',
 		component: ProfileComponent,
-	  },
-	  { 
+	},
+	{ 
 		path: 'guardians',
 		component: GuardianComponent,
-	  },
-
-// {
-//   path: '**',
-//   component: NotFoundComponent
-// }
+	},
+	{
+		path: '**',
+		component: NotFoundComponent
+	}
 ]
 
 @NgModule({
