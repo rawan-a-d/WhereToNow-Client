@@ -8,7 +8,6 @@
 /* screens less than 550px */
 @media screen and (max-width: 550px) {
     #looking-for-trip {
-        margin-top: 10%;
 		width: 90%;
         margin: 4% 5%;
 	}	
