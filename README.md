@@ -1,4 +1,6 @@
 # WhereToNowClient
+A platform for Syrian residents which allows them to plan trips easily, cheaply and safely by facilitating group trips and allowing users to notify a group of people/guardians if they felt unsafe.
+
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.2.7.
 
